@@ -4,10 +4,10 @@ function Icons() {
     return(
         <div>
              <ul className="flex flex-row justify-center items-center mt-10  ">
-                <li className="bg-yellow-900 w-11 h-11 rounded-full flex justify-center  items-center  relative top- bottom-45 right-63  duration-300 ease-out hover:bg-amber-700 hover:scale-105 transition-all 2s cursor-pointer">
+                <li className="bg-yellow-700 w-11 h-11 rounded-full flex justify-center  items-center  relative top- bottom-45 right-63  duration-300 ease-out hover:bg-amber-700 hover:scale-105 transition-all 2s cursor-pointer">
                     <a onClick={() => window.open("/sobre", "_blank")} href="https://www.linkedin.com/in/joaoanjoadev/" className=" p-2 w-10">
                         <svg xmlns="http://www.w3.org/2000/svg" 
-                            className="text-white"
+                            
                             width="24" 
                             height="24" 
                             viewBox="0 0 24 24" 
@@ -19,10 +19,10 @@ function Icons() {
                             class="lucide lucide-linkedin-icon lucide-linkedin">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
                 </li>
-                <li className="bg-yellow-900 w-11 h-11 rounded-full flex justify-center items-center  relative bottom-45 right-56 duration-300 ease-out hover:bg-amber-700 hover:scale-105 transition-all 2s cursor-pointer" >
+                <li className="bg-yellow-700 w-11 h-11 rounded-full flex justify-center items-center  relative bottom-45 right-56 duration-300 ease-out hover:bg-amber-700 hover:scale-105 transition-all 2s cursor-pointer" >
                     <a href="https://github.com/jaumm0">
                         <svg xmlns="http://www.w3.org/2000/svg" 
-                        className="text-white"
+                        
                         width="24" 
                         height="24" 
                         viewBox="0 0 24 24" 
