@@ -6,7 +6,7 @@ const NavegationBar = () => {
     <nav className="w-100 h-screen fixed top-0 left-0 flex flex-col items-center p-6 bg-black min(m-) text-white">
     <div className=""  >
         
-        <section className="flex flex-col justify-center items-center space-y-3 pt-5 fixed top-50 left-35 font-bold gap-2 text-lg"> 
+        <aside className="flex flex-col justify-center items-center space-y-3 pt-5 fixed top-50 left-35 font-bold gap-2 text-lg"> 
 
             <h3><a href="#Profile" className="hover:text-yellow-900 transition-all 2s ">Sobre</a></h3>
             <h3><a href="#Experiencia"className="hover:text-yellow-900 transition-all 2s">Experiencias</a></h3>
@@ -15,7 +15,7 @@ const NavegationBar = () => {
             <h3><a href="#Habilidades"className="hover:text-yellow-900 transition-all 2s" >Habilidades</a></h3>
             <h3><a href=""className="hover:text-yellow-900 transition-all 2s">Contato</a></h3>
             
-        </section>
+        </aside>
       </div>
       </nav>
   );
