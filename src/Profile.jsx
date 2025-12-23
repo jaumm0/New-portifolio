@@ -1,24 +1,30 @@
 import React from "react";
-import Assets from "./assets/fotoProfile.jpg";
+import Assets from "./Assets/fotoProfile.jpg";
 
 const Profile = () => {
     return (  
     
-    <nav id="Profile" className="flex items-center h-200 relative left-50 top-[1vh] space-y-2 font-sans "> 
-        <h1 className=" text-4xl font-bold relative left-58 top-0  ">JOAO VICTOR</h1>
-        <div className="flex items-center justify-center mt-20  space-y-1 ">   
-                <p className="text-4xl font-bold top-52 left-141 text-yellow-900">Front-end Developer</p>
-                <p className="w-150 relative  pos-fullhd font-bold " >Desenvolvedor Front-End focado em React, JavaScript e Tailwind criando interfaces modernas, responsivas e de alto desempenho. Experiência em desenvolvimento web voltado à experiência do usuário, performance e boas práticas de código. Apaixonado por design funcional, código limpo e aprendizado contínuo.</p>
-
-            <span flex justify-center align-center> 
-                <span className=" border-yellow-900  rounded-full relative ">
-                    <img src={Assets} alt="Foto de Perfil" width={300} className="relative right-[25vh] border-4 border-yellow-900 rounded-full "  />
-                </span>
+   <section id="Profile" className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-1 gap-3  justify-center flex ml-auto mt-20 items-center"> 
+    <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 w-110 justify-center items-center  "> 
+        <h1 
+            className="text-base sm:text-4xl md:text-4xl lg:text-4xl font-bold text-yellow-900  ">JOAO VICTOR
+        </h1> 
+        <p 
+            className=" font-bold text-base sm:text-4xl md:text-4xl lg:text-4xl  text-yellow-900">Front-end Developer
+        </p>
+        <p 
+            className="w-110  text-base sm:text-lg md:text-xl lg:text-sm font-bold  " >Desenvolvedor Front-End focado em React, JavaScript e Tailwind criando interfaces modernas, responsivas e de alto desempenho. Experiência em desenvolvimento web voltado à experiência do usuário, performance e boas práticas de código. Apaixonado por design funcional, código limpo e aprendizado contínuo.
+        </p> 
+    </div> 
+        <div 
+            className=" grid grid-cols-1 md:grid-cols-1 hidden md:block   lg:grid-cols-1 place-items-end w-75 place-items-end "> 
+            <span className="flex justify-center align-center">  
+                <span className=" border-yellow-900  "> 
+                    <img src={Assets} alt="Foto de Perfil" width={300} className="border-4 border-yellow-900 rounded-full " /> 
+                </span> 
             </span>
-          
-        </div>
-       
-     </nav>
+        </div> 
+        </section>
      );
 }
 export default Profile;  

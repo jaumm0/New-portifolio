@@ -13,27 +13,25 @@ import Icons from './icons.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <body className='w-full h-full'>
-      
-    
-   <header className='flex '>
-      <nav className='flex w-400'>
-        <NavegationBar/>
+    <body className=''>
+   <header className='grid grid-cols-1 w-60 h-full text-white  fixed bg-yellow-900'> 
+      <nav className=' justify-center items-center fixed left-18 top-40 '>
+        <NavegationBar/>  
       </nav>
     </header>
-    <main className='flex justify-center flex-col items-center  '>
+    <main className='flex justify-center flex-col items-center  w-full h-full'>
       <Profile/>
-      <Icons/>
-        <section className='w-3/6 flex justify-center items-center relative left-42 '>
+      
+        <section className=' flex justify-center items-center relative left-42 w-195'> 
           <Experiencia/>
         </section>
-        <section className='w-3/6 flex justify-center items-center relative left-42 mt-30'>
+        <section className=' flex justify-center items-center relative left-42 mt-30 w-195'>
           <Projects/>
         </section>
-        <section className=' flex justify-center items-center relative left-42 w-3/6 '>
+        <section className=' flex justify-center items-center relative left-42 w-195 '>
           <Services/>
         </section>
-        <section className='flex justify-center items-center relative left-42 w-3/6 '> 
+        <section className='flex justify-center items-center relative left-42 w-195 '> 
           <Habilidades/>
         </section>
         <section className='flex justify-center items-center  w-3/6 border rounded-2xl h-full mt-30 '>
