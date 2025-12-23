@@ -34,9 +34,12 @@ createRoot(document.getElementById('root')).render(
         <section className='flex justify-center items-center relative left-42 w-195 '> 
           <Habilidades/>
         </section>
-        <section className='flex justify-center items-center  w-3/6 border rounded-2xl h-full mt-30 '>
-         
+        <footer>
+        <section className='flex justify-center items-center relative left-42 w-195 '>
+          
         </section>
+        </footer>
+      
     </main>
     </body>
     

@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
+import { ArrowBigRightDash } from 'lucide-react';
+import { ArrowBigLeftDash } from 'lucide-react';
+import Assets from "./Assets/test.png";
 
 function Projects() {
   const projects = [
     {
-      title: "Sistema de Gerenciamento de Tarefas",
-      image: "https://via.placeholder.com/600x300",
+      title: "Landing Page ",
+      image: "https://acdn-us.mitiendanube.com/stores/001/929/213/themes/atlantico/2-slide-1734049808011-3571780959-ac8720bc9fe5a2c6e971c0536ef96b651734049810-1920-1920.webp?272675730",
       link: "https://jaumm0.github.io/Landing-page-react/",
       description:
-        "Aplicação web desenvolvida com React.js e Node.js para gerenciar tarefas diárias. Inclui criação, edição e exclusão de tarefas.",
+        "Landing page desenvolvida com foco na venda de produtos gamer de alta qualidade, priorizando performance, design moderno e experiência do usuário. O projeto foi construído com React e Vite para garantir carregamento rápido e uma estrutura eficiente, Tailwind CSS para estilização responsiva e consistente, e Lucide Icons para ícones leves e modernos. O layout foi pensado para destacar os produtos, reforçar a identidade gamer e incentivar a conversão.",
     },
     {
       title: "Portal de Notícias em Tempo Real",
-      image: "https://via.placeholder.com/600x300",
+      image: Assets,
       link: "https://jaumm0.github.io/Landing-page-react/",
       description:
         "Portal de notícias que consome APIs públicas para exibir notícias em tempo real, com React no front-end.",
@@ -41,11 +44,11 @@ function Projects() {
     );
   };
 
-  // ⏱ Auto-play
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // // ⏱ Auto-play
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide, 900000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <section
@@ -64,7 +67,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-full p-8 bg-gray-900 text-white"
+              className="min-w-full p-8 bg-yellow-900 text-white"
             >
               <img
                 src={project.image}
@@ -72,18 +75,18 @@ function Projects() {
                 className="w-full h-56 object-cover rounded-lg mb-4"
               />
 
-              <h4 className="text-xl font-bold mb-2">
+              <h4 className="text-xl font-bold mb-2 item-center justify-center flex">
                 {project.title}
               </h4>
 
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4 font-medium">
                 {project.description}
               </p>
 
               <a
                 href={project.link}
                 target="_blank"
-                className="inline-block bg-yellow-900 px-4 py-2 rounded hover:bg-yellow-800 transition"
+                className="inline-block bg-yellow-700 px-4 py-2 rounded hover:bg-yellow-800 transition"
               >
                 Ver projeto
               </a>
@@ -94,16 +97,16 @@ function Projects() {
         {/* Botões */}
         <button
           onClick={prevSlide}
-          className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-2 rounded-full"
+          className="absolute left-3 top-70 -translate-y-1/2 transition duration-300 hover:bg-black/60 cursor-pointer text-white px-3 py-2 rounded-full"
         >
-          ◀
+          <ArrowBigLeftDash />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-2 rounded-full"
+          className="absolute right-3 top-70 -translate-y-1/2 cursor-pointer transition duration-300 hover:bg-black/60 text-white px-3 py-2 rounded-full"
         >
-          ▶
+          <ArrowBigRightDash />
         </button>
       </div>
 
