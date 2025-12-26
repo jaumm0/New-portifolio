@@ -110,18 +110,7 @@ function Projects() {
         </button>
       </div>
 
-      {/* Dots */}
-      <div className="flex justify-center gap-2 mt-4">
-        {projects.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full ${
-              i === current ? "bg-yellow-900" : "bg-gray-400"
-            }`}
-          />
-        ))}
-      </div>
+      
     </section>
   );
 }
