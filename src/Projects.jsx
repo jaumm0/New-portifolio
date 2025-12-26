@@ -46,9 +46,9 @@ function Projects() {
 
   // // ⏱ Auto-play
   // useEffect(() => {
-  //   const interval = setInterval(nextSlide, 900000);
-  //   return () => clearInterval(interval);
-  // }, []);
+    // const interval = setInterval(nextSlide, 3000);
+   //  return () => clearInterval(interval);
+ // }, []);
 
   return (
     <section
@@ -67,7 +67,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-full p-8 bg-yellow-900 text-white"
+              className="min-w-full p-8   text-white"
             >
               <img
                 src={project.image}
@@ -75,11 +75,11 @@ function Projects() {
                 className="w-full h-56 object-cover rounded-lg mb-4"
               />
 
-              <h4 className="text-xl font-bold mb-2 item-center justify-center flex">
+              <h4 className="text-xl font-bold mb-2 text-black item-center justify-center flex">
                 {project.title}
               </h4>
 
-              <p className="text-gray-300 mb-4 font-medium">
+              <p className="text-black mb-4 font-medium">
                 {project.description}
               </p>
 
@@ -99,14 +99,14 @@ function Projects() {
           onClick={prevSlide}
           className="absolute left-3 top-70 -translate-y-1/2 transition duration-300 hover:bg-black/60 cursor-pointer text-white px-3 py-2 rounded-full"
         >
-          <ArrowBigLeftDash />
+          <ArrowBigLeftDash  className="text-black" />
         </button>
 
         <button
           onClick={nextSlide}
           className="absolute right-3 top-70 -translate-y-1/2 cursor-pointer transition duration-300 hover:bg-black/60 text-white px-3 py-2 rounded-full"
         >
-          <ArrowBigRightDash />
+          <ArrowBigRightDash className="text-black" />
         </button>
       </div>
 

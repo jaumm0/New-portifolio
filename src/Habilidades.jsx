@@ -2,12 +2,11 @@ import React from "react";
 
 function Habilidades() {
     return(
-        <div id="Habilidades" className="flex flex-center flex-col gap-5 w-full h-100 font-sans border-yellow-900 ">
+        <div id="Habilidades" className="grid grid-cols-1 flex-col gap-5 w-200 place-self-start h-100 mb-50 mt-5 font-sans border-yellow-900 ">
             <h3 className="text-3xl font-bold">Habilidades</h3>
             <ul className="flex flex-row gap-5  justify-center items-center cursor-pointer  "> 
                 
-                
-                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-yellow-600 hover:fill-yellow-600 ">
+                <div className="border  border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-white hover:fill-white hover:bg-yellow-600 hover:border-yellow-600 transition delay-50 "> 
                     <span >
                         <svg 
                             className="cursor-pointer"
@@ -35,7 +34,7 @@ function Habilidades() {
                         <p className="font-bold justify-center flex p-2 ">HTML</p>
                     </span>
                 </div>
-                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-blue-400 hover:fill-blue-400 ">
+                <div className="border  border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-white hover:fill-white hover:bg-blue-400 hover:border-blue-400 transition delay-50 ">
                     <span> 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +52,7 @@ function Habilidades() {
                         <p className="font-bold justify-center flex p-2 ">CSS</p>
                     </span>
                 </div>
-                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-yellow-400 hover:fill-yellow-400   ">
+                <div className="border border-yellow-900 w-100 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-white hover:fill-white transition delay-50   yellow-400 hover:bg-yellow-400 hover:border-yellow-400  ">
                     <span>
                         <svg 
                             className="ml-1 "
@@ -81,7 +80,7 @@ function Habilidades() {
                 </div>
             </ul>   
            <div className="flex flex-row gap-5 justify-center cursor-pointer">
-             <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-blue-300 hover:fill-blue-300   ">
+             <div className="border border-yellow-900 w-100  h-40 rounded-3xl shadow-md flex justify-center pt-5 transition delay-50 hover:text-blue-300 hover:bg-blue-300  hover:fill-white hover:text-white hover:border-blue-300   ">
                     <span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -92,10 +91,10 @@ function Habilidades() {
                             <path fill="none" d="M0 0h24v24H0z"></path>
                             <path d="M12 10.11A1.87 1.87 0 1 1 10.13 12 1.88 1.88 0 0 1 12 10.11M7.37 20c.63.38 2-.2 3.6-1.7a24 24 0 0 1-1.51-1.9 23 23 0 0 1-2.4-.4c-.51 2.14-.32 3.61.31 4m.71-5.74-.29-.51a8 8 0 0 0-.29.86c.27.06.57.11.88.16zm6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9h-1.71c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47h3.42c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7a24 24 0 0 1 1.51 1.9 23 23 0 0 1 2.4.36c.51-2.14.32-3.61-.32-4m-.7 5.74.29.51a8 8 0 0 0 .29-.86c-.27-.06-.57-.11-.88-.16zm1.45-7c1.47.84 1.63 3.05 1 5.63 2.54.75 4.37 2 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1 5.63s-3.45-.12-5.37-1.95c-1.92 1.83-3.91 2.79-5.38 1.95s-1.62-3-1-5.63c-2.54-.75-4.37-2-4.37-3.68s1.83-2.94 4.37-3.69c-.62-2.58-.46-4.79 1-5.63s3.46.12 5.38 1.95c1.92-1.83 3.91-2.79 5.37-1.95M17.08 12a23 23 0 0 1 .92 2.26c2.1-.63 3.28-1.53 3.28-2.26S20.07 10.37 18 9.74a23 23 0 0 1-.92 2.26M6.92 12A23 23 0 0 1 6 9.74c-2.1.63-3.28 1.53-3.28 2.26S3.93 13.63 6 14.26A23 23 0 0 1 6.92 12m9 2.26-.3.51c.31 0 .61-.1.88-.16a8 8 0 0 0-.29-.86zM13 18.3c1.59 1.5 3 2.08 3.59 1.7s.83-1.82.32-4a23 23 0 0 1-2.4.36A24 24 0 0 1 13 18.3M8.08 9.74l.3-.51c-.31 0-.61.1-.88.16a8 8 0 0 0 .29.86zM11 5.7C9.38 4.2 8 3.62 7.37 4s-.82 1.82-.31 4a23 23 0 0 1 2.4-.36A24 24 0 0 1 11 5.7"></path>
                         </svg>
-                        <p className="font-bold justify-center flex p-2 ">REACT</p>
+                        <p className="font-bold justify-center flex p-2  ">REACT</p>
                     </span>
                 </div>
-                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-blue-400 hover:fill-blue-400  ">
+                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-white hover:fill-white hover:bg-blue-400 hover:border-blue-400 transition delay-50  ">
                     <span className="as">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +111,7 @@ function Habilidades() {
                         <p className="font-bold justify-center flex pt-2  ">TAILWIND</p>
                     </span>
                 </div>
-                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-pink-400 hover:fill-pink-400   ">
+                <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-white hover:fill-white hover:bg-pink-400 hover:border-pink-400  transition delay-50  ">
                     <span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

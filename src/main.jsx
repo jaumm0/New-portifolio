@@ -19,9 +19,10 @@ createRoot(document.getElementById('root')).render(
         <NavegationBar/>  
       </nav>
     </header>
-    <main className='flex justify-center flex-col items-center  w-full h-full'>
-      <Profile/>
-      
+    <main className='flex justify-center flex-col items-center h-full '>
+        <section className=' flex justify-center items-center relative left-42 w-195'>
+          <Profile/>
+        </section>
         <section className=' flex justify-center items-center relative left-42 w-195'> 
           <Experiencia/>
         </section>
@@ -31,7 +32,7 @@ createRoot(document.getElementById('root')).render(
         <section className=' flex justify-center items-center relative left-42 w-195 '>
           <Services/>
         </section>
-        <section className='flex justify-center items-center relative left-42 w-195 '> 
+        <section className='flex justify-center items-center relative left-42 w-195  '> 
           <Habilidades/>
         </section>
         <footer>

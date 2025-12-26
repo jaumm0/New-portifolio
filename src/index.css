@@ -1,10 +1,3 @@
 @import "tailwindcss";
 
 
-/* Quando a tela for 1080px ou mais */
-@media (min-width: 1080px) {
-  .pos-fullhd {
-    @apply right-87 top-25;  /* coloque o valor que você quer */
-  }
-}
-

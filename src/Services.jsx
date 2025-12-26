@@ -1,10 +1,10 @@
 import React from "react";
 import { Code, CodeXml } from 'lucide-react';
-import PixelTransition from './PixelTransition';
+
 function Services() {
     return (
         
-    <div id="Services" className="grid grid-cols-1 items-center justify-center text-center mb-30 mt-10 gap-4">
+    <div id="Services" className="grid grid-cols-1 items-center justify-center text-center mb-40 mt-20 gap-4 ">
         <h3 className="  top-50 text-3xl pb-5 font-bold flex ">Serviços</h3>
         <ul className="flex flex-row items-center justify-center text-start  gap-4 ">
             <li className="border border-gray-800 rounded-2xl text-sm  w-120 h-60  ">
