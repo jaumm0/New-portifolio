@@ -5,6 +5,8 @@ function Habilidades() {
         <div id="Habilidades" className="flex flex-center flex-col gap-5 w-full h-100 font-sans border-yellow-900 ">
             <h3 className="text-3xl font-bold">Habilidades</h3>
             <ul className="flex flex-row gap-5  justify-center items-center cursor-pointer  "> 
+                
+                
                 <div className="border border-yellow-900 w-50 h-40 rounded-3xl shadow-md flex justify-center pt-5 hover:text-yellow-600 hover:fill-yellow-600 ">
                     <span >
                         <svg 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Code, CodeXml } from 'lucide-react';
+import PixelTransition from './PixelTransition';
 function Services() {
     return (
         
