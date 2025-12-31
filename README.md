@@ -9,7 +9,7 @@ Este repositório contém um portfólio pessoal construído com Vite + React. In
 - Vite
 - React (JSX)
 - HTML
-- CSS
+- Tailwind
 - ESLint
 - Git
 
